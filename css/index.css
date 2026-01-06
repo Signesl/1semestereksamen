@@ -37,12 +37,38 @@
   display: block;
 }
 
+/* FOOTER */
+.forside-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid #c00000;
+  padding: 20px 40px 40px 20px;
+  margin-top: 230px;
+}
+
+.forside-footer a {
+  color: #aa0c0c;
+  text-decoration: none;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: 12px;
+}
+
+.forside-footer a:hover {
+  opacity: 0.5;
+}
+
+.navigation ul {
+  color: #aa0c0c;
+  list-style: none;
+}
+
 .forsidenavigation {
   font-size: 14px;
   letter-spacing: 0.08em;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #aa0c0c;
   font-family: "Hedvig Letters Sans", sans-serif;
+  padding: 0;
 }
 
 @media (min-width: 1024px) {
