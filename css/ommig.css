@@ -137,7 +137,7 @@
   /*Navigations overskrift*/
   .h3-navigation {
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   /* Skifter rækkefølgen på billed-elementer i hver anden .grid_1-1 sektion,
