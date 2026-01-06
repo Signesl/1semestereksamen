@@ -1,4 +1,4 @@
-/* GLOBAL */
+/* GLOBALT */
 html {
   background-color: #eeecda;
 }
@@ -12,7 +12,7 @@ p {
   padding: 5px 5px 5px 0;
 }
 
-/*HERO / LOGO */
+/*HELE MENUEN */
 .hero {
   display: flex;
   width: 100%;
@@ -20,6 +20,7 @@ p {
   border-bottom: 1px solid #c00000;
 }
 
+/*Logo*/
 .hero-logo {
   height: 15px;
   padding: 2px;
@@ -41,6 +42,7 @@ p {
   cursor: pointer;
 }
 
+/*Burger streger*/
 .burger span {
   height: 2px;
   width: 100%;
@@ -63,13 +65,15 @@ p {
   padding: 16px 18px;
 }
 
+/*Burger menu åben*/
 .nav.open ul {
   display: flex;
   background-color: #e0deca;
-  border-radius: 5px;
+  border-radius: 2px;
   z-index: 1000;
 }
 
+/*Menu punkter som links*/
 .nav ul li a {
   text-decoration: none;
   color: #aa0c0c;
@@ -80,6 +84,7 @@ p {
   padding-bottom: 1px;
 }
 
+/*Menu punkt, når man er inde på den side*/
 .nav ul li a.active {
   border-bottom: 2px solid #aa0c0c;
 }

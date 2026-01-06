@@ -23,6 +23,7 @@
   width: 50%;
 }
 
+/*overskrifter til vinter eventyr og redesign*/
 .indhold-små-overskifter {
   font-family: "Public Sans", sans-serif;
   color: #424244;
@@ -64,6 +65,7 @@
   height: 100%;
 }
 
+/*tredje kolonne på indholdssiden*/
 .text-kolonne p {
   font-family: "Public Sans", sans-serif;
 }
@@ -93,6 +95,7 @@
     gap: 5rem;
   }
 
+  /*tredje kolonne med knapper og youtube link*/
   .btn-dokumentations-sektion {
     margin-left: 2rem;
     margin-right: 2rem;

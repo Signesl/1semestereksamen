@@ -13,6 +13,7 @@
   border-bottom: 1px solid #aa0c0c;
 }
 
+/*sidste boks i layouttet*/
 .projekt-card:last-child {
   border-bottom: none;
 }
@@ -32,7 +33,7 @@
   font-size: 20px;
 }
 
-/*Navigations overskrift*/
+/*Navigations overskrift i footeren*/
 .h3-navigation {
   font-size: 14px;
   letter-spacing: 0.08em;
@@ -66,7 +67,7 @@
     padding: 90px 50px 0 30px;
   }
 
-  /*Navigations overskrift*/
+  /*Navigations overskrift footeren*/
   .h3-navigation {
     font-size: 16px;
     margin-bottom: 0;
