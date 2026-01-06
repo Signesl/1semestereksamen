@@ -92,7 +92,7 @@ p {
 h1 {
   color: #aa0c0c;
   font-family: "Public Sans", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
   padding: 20px 20px 20px 25px;
@@ -102,7 +102,7 @@ h2 {
   color: #aa0c0c;
   font-family: "Inria Serif", serif;
   font-size: 20px;
-  padding: 25px 0 10px 0;
+  padding: 25px 0 5px 0;
 }
 
 h3 {
@@ -115,7 +115,7 @@ h3 {
 /*h3 underoverskrifter*/
 .underoverskrift {
   font-family: "Inria Serif", serif;
-  padding: 5px 0 5px 0;
+  padding: 0 0 10px 0;
   font-size: 14px;
   color: #aa0c0c;
 }
@@ -231,6 +231,7 @@ h3 {
 
   .underoverskrift {
     font-size: 16px;
+    padding: 2px 0 10px 0;
   }
 
   /* Brødtekst */
