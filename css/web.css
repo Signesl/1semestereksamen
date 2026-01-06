@@ -78,7 +78,7 @@
 
   .billedklamme3 img {
     width: 50%;
-    margin-bottom: 5rem; /* beholder afstand under */
-    margin-top: -4rem; /* rykker billedet 2rem op */
+    margin-bottom: 5rem;
+    margin-top: -4rem;
   }
 }
