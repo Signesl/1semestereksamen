@@ -1,0 +1,32 @@
+/* Fælles styling for alle billedklammer */
+.billedklamme1-uxui,
+.billedklamme2-uxui,
+.billedklamme3-uxui {
+  display: flex;
+  justify-content: center;
+}
+
+/* Billeder i klammerne - standard mobil */
+.billedklamme1-uxui img,
+.billedklamme2-uxui img {
+  width: 50%;
+  padding: 10px;
+}
+
+.billedklamme3-uxui img {
+  width: 80%;
+  padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .billedklamme1-uxui img,
+  .billedklamme2-uxui img {
+    width: 50%;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .billedklamme3-uxui img {
+    width: 65%;
+    padding-bottom: 90px;
+  }
+}

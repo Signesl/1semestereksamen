@@ -1,0 +1,99 @@
+.billedklamme1-indhold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+.billedklamme1-indhold img:first-child {
+  width: 50%;
+}
+
+.billedklamme1-indhold img:last-child {
+  width: 50%;
+}
+
+.billedklamme2-indhold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billedklamme2-indhold img {
+  width: 50%;
+}
+
+.indhold-små-overskifter {
+  font-family: "Public Sans", sans-serif;
+  color: #424244;
+  font-size: 16px;
+  padding: 10px 0 3px 0;
+  text-decoration: underline;
+}
+
+.læring-sektion {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.btn-wrapper3 {
+  display: flex;
+  flex-direction: column; /*Knapperne er under hinanden*/
+  gap: 1rem; /* afstand mellem knapper */
+  padding-bottom: 20px;
+}
+
+.btn-wrapper3 .btn {
+  display: block;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-kolonne p {
+  font-family: "Public Sans", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .billedklamme1-indhold img:first-child {
+    width: 400px;
+  }
+
+  .billedklamme1-indhold img:last-child {
+    width: 300px;
+  }
+
+  .billedklamme2-indhold img {
+    width: 300px;
+  }
+  .indhold-små-overskifter {
+    font-size: 18px;
+    padding: 10px 0 0 3px;
+  }
+
+  .læring-sektion {
+    grid-template-columns: 1fr 1fr;
+    align-items: start; /* Den højre kolonne starter øverst */
+    margin-left: 5rem;
+    margin-right: 4rem;
+    gap: 5rem;
+  }
+
+  .btn-dokumentations-sektion {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}

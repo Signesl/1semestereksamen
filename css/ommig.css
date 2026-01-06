@@ -1,0 +1,144 @@
+/*Om mig, øverste sektion*/
+#ommig-overskrift {
+  color: #aa0c0c;
+  font-family: "Inria Serif", serif;
+  font-size: 30px;
+  padding: 60px 50px 0 30px;
+}
+
+.billede-ommig {
+  display: flex;
+  justify-content: center;
+}
+
+.billede-ommig img {
+  width: 80%;
+  padding: 20px;
+}
+
+/*  ERHVERVSERFARING */
+#erhvervserfaring-titel {
+  font-family: "Inria Serif", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 20px 0 0;
+}
+
+.titler-ommig,
+.rolle,
+.person,
+.pris {
+  font-family: "Inria Serif", serif;
+  color: #000;
+}
+
+.titler-ommig {
+  font-size: 16px;
+  padding: 30px 0 20px 0;
+}
+.rolle {
+  font-size: 16px;
+  padding: 30px 0 20px 0;
+}
+.person {
+  font-size: 14px;
+}
+.pris {
+  font-size: 12px;
+}
+
+.text-ommig,
+.text-1semester,
+.text-1semester2kolonne {
+  font-family: "Public Sans", sans-serif;
+}
+
+/* OM SEMESTERET SEKTION */
+#semester-overskrift {
+  font-family: "Inria Serif", serif;
+  font-size: 20px;
+  padding: 0 10px 10px 0px;
+  text-transform: uppercase;
+}
+
+.h3-navigation {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  color: #aa0c0c;
+  font-family: "Hedvig Letters Sans", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  /* Om mig */
+  #ommig-overskrift {
+    font-size: 40px;
+    padding: 80px 50px 20px 100px;
+    font-weight: 600;
+  }
+
+  .billede-ommig img {
+    width: 60%;
+  }
+
+  /* Erhvervserfaring */
+  #erhvervserfaring-titel {
+    font-size: 30px;
+    grid-column: 1;
+    padding-left: 80px;
+  }
+
+  .titler-ommig {
+    font-size: 18px;
+  }
+  .rolle {
+    font-size: 18px;
+  }
+  .person {
+    font-size: 16px;
+  }
+  .pris {
+    font-size: 14px;
+  }
+
+  .text-ommig {
+    padding-top: 50px;
+    margin: 0 5rem;
+  }
+
+  .grid_1-1 {
+    align-items: start;
+  }
+
+  /* Semester sektion */
+  #semester-overskrift {
+    font-size: 30px;
+    padding: 50px 0 0 80px;
+  }
+
+  .grid_1-1 .text-1semester,
+  .grid_1-1 .text-1semester2kolonne {
+    font-family: "Public Sans", sans-serif;
+    padding-top: 50px;
+    margin: 0 5rem;
+  }
+
+  .grid_1-1 .text-1semester {
+    grid-column: 1;
+  }
+  .grid_1-1 .text-1semester2kolonne {
+    grid-column: 2;
+  }
+
+  .h3-navigation {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .grid_1-1:nth-child(even) .billede-ommig,
+  .grid_1-1:nth-child(even) .billedklamme2,
+  .grid_1-1:nth-child(even) .billedklamme3 {
+    order: 2;
+  }
+}

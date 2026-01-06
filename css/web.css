@@ -1,0 +1,84 @@
+/* Billledesektion på temasiderne, øverste sektion*/
+.billedklamme1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 0 40px 20px 40px;
+}
+
+/*Tager fat i billederne i kolonnen*/
+.billedklamme1 img:first-child {
+  width: 75%;
+}
+
+.billedklamme1 img:last-child {
+  width: 30%;
+}
+
+/* Billedesektion på temasiderne, midterste sektion*/
+.billedklamme2 {
+  display: flex;
+  justify-content: center;
+  padding: 0 40px 20px 40px;
+}
+
+/*Tager fat i af billederne i kolonnen*/
+.billedklamme2 img:first-child {
+  width: 65%;
+}
+
+.billedklamme2 img:last-child {
+  width: 65%;
+}
+
+/* Billedesektion på temasiderne, sidste sektion*/
+.billedklamme3 {
+  display: flex;
+  justify-content: center;
+}
+.billedklamme3 img {
+  width: 40%;
+}
+@media (min-width: 1024px) {
+  /* Billedesektion på temasiderne, øverste sektion*/
+  .billedklamme1 {
+    gap: 1.5rem;
+    padding: 0 70px 0 40px;
+  }
+
+  .billedklamme1 img:first-child {
+    width: 400px;
+  }
+
+  .billedklamme1 img:last-child {
+    width: 150px;
+  }
+  /* Billedesektion på temasiderne, midterste sektion*/
+  .billedklamme2 {
+    gap: 1.5rem;
+    padding-left: 0;
+  }
+
+  .billedklamme2 img:first-child {
+    width: 350px;
+  }
+
+  .billedklamme2 img:last-child {
+    width: 350px;
+  }
+
+  .billedklamme2 text {
+    margin-left: 8rem;
+  }
+
+  .billedklamme3 {
+    margin-right: 1rem;
+  }
+
+  .billedklamme3 img {
+    width: 50%;
+    margin-bottom: 5rem; /* beholder afstand under */
+    margin-top: -4rem; /* rykker billedet 2rem op */
+  }
+}

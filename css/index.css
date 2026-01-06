@@ -1,0 +1,74 @@
+/* FORSIDE SEKTION */
+.forside-sektion {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PORTFOLIO TEKST */
+.portfolio-title {
+  color: #aa0c0c;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+  position: absolute; /* Løfter teksten ud af normal flow */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%); /* Centrerer teksten */
+  z-index: 2; /* Placerer oven på billedet */
+  letter-spacing: 2px;
+}
+
+/* BILLEDE KONTAINER*/
+.profil-billede-container {
+  position: relative;
+  z-index: 1; /* Bagved Portfolio-teksten */
+  margin-left: 175px; /* Skubber billedet mod højre */
+  margin-top: 40px;
+}
+
+/* SELVE BILLEDET*/
+.profil-billede {
+  width: 110px;
+  height: auto;
+  display: block;
+}
+
+.forsidenavigation {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  color: #aa0c0c;
+  font-family: "Hedvig Letters Sans", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  /* Portfolio titel */
+  .portfolio-title {
+    font-size: 200px;
+  }
+
+  /* Forside sektion */
+  .forside-sektion {
+    min-height: 90vh;
+  }
+
+  /* Billed-container */
+  .profil-billede-container {
+    margin-left: 520px; /* Skubber billedet mod højre */
+    margin-top: 90px;
+  }
+
+  /* Profilbillede */
+  .profil-billede {
+    width: 280px;
+    height: auto;
+  }
+
+  .forsidenavigation {
+    font-size: 14px;
+  }
+}

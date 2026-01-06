@@ -1,0 +1,276 @@
+/* GLOBAL */
+html {
+  background-color: #eeecda;
+}
+
+.text {
+  font-family: "Public Sans", sans-serif;
+}
+
+p {
+  color: #424244;
+  padding: 5px 5px 5px 0;
+}
+
+/*HERO / LOGO */
+.hero {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #c00000;
+}
+
+.hero-logo {
+  height: 15px;
+  padding: 2px;
+}
+
+/* NAVIGATION */
+.nav {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Burger ikon */
+.burger {
+  width: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 2px;
+  width: 100%;
+  background: #aa0c0c;
+  display: block;
+}
+
+/* Menu punkter */
+.nav ul {
+  position: absolute;
+  align-items: flex-end;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  top: calc(100% + 2px);
+  right: 0;
+  min-width: 130px;
+  padding: 16px 18px;
+}
+
+.nav.open ul {
+  display: flex;
+  background-color: #e0deca;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #aa0c0c;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 1px;
+}
+
+.nav ul li a.active {
+  border-bottom: 2px solid #aa0c0c;
+}
+
+.nav ul li a:hover {
+  opacity: 0.6;
+}
+
+/* OVERSKRIFTER */
+h1 {
+  color: #aa0c0c;
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 20px 20px 20px 25px;
+}
+
+h2 {
+  color: #aa0c0c;
+  font-family: "Inria Serif", serif;
+  font-size: 20px;
+  padding: 25px 0 10px 0;
+}
+
+h3 {
+  color: #aa0c0c;
+  font-family: "Inria Serif", serif;
+  font-size: 18px;
+  padding: 20px 0 20px 10px;
+}
+
+/*h3 underoverskrifter*/
+.underoverskrift {
+  font-family: "Inria Serif", serif;
+  padding: 5px 0 5px 0;
+  font-size: 14px;
+  color: #aa0c0c;
+}
+
+/*KNAPPER */
+.btn-wrapper,
+.btn-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1.5px solid #aa0c0c;
+  border-radius: 500px;
+  color: #aa0c0c;
+  text-decoration: none;
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-align: center;
+  width: 70%;
+}
+
+.btn:hover {
+  background-color: #aa0c0c;
+  color: #eeecda;
+}
+
+/* FOOTER */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid #c00000;
+  padding: 20px 40px 40px 20px;
+  margin-top: 250px;
+}
+
+.footer a {
+  color: #aa0c0c;
+  text-decoration: none;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: 12px;
+}
+
+.footer a:hover {
+  opacity: 0.5;
+}
+
+.navigation ul {
+  color: #aa0c0c;
+  list-style: none;
+}
+
+.navigation h4 {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  color: #aa0c0c;
+  font-family: "Hedvig Letters Sans", sans-serif;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  /* HERO */
+  .hero {
+    height: 50px;
+  }
+
+  .hero-logo {
+    height: 20px;
+    padding: 2px;
+  }
+
+  /* Burger ikon skjules */
+  .burger {
+    display: none;
+  }
+
+  /* Menu punkter */
+  .nav ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    background: none;
+    margin-right: 20px;
+    padding: 0 60px 0 0;
+    font-family: "Hedvig Letters Sans", sans-serif;
+  }
+
+  /* Overskrifter */
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 30px 20px 20px 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+    padding: 10px 10px 10px 0;
+    padding-bottom: 2px;
+  }
+
+  h3 {
+    padding: 30px 10px 20px 0;
+  }
+
+  .underoverskrift {
+    font-size: 16px;
+  }
+
+  /* Brødtekst */
+  .text {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 65ch;
+    padding: 10px 4px 5px 0;
+  }
+
+  /* Sektion */
+  section {
+    padding: 3rem 0;
+  }
+
+  /* Knapper */
+  .btn {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 40px 40px 60px;
+    margin-top: 200px;
+  }
+
+  .footer a {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .navigation h4 {
+    font-size: 16px;
+  }
+}

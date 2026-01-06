@@ -1,0 +1,53 @@
+/*CSS sheet med samlet overblik af alle temasiderne med displayet grid_1-1*/
+
+/*  GRID 1-1 */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  border-bottom: 1px solid #aa0c0c;
+}
+
+.grid_1-1:last-child {
+  border-bottom: none;
+}
+
+/* Tilbage-knap skjult på mobil */
+.backBtn {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+  }
+
+  /* Hver anden sektion med .text rykker til venstre */
+  .grid_1-1:nth-of-type(odd) > .text {
+    order: -1;
+  }
+
+  /* Tilbage-knap på temasider */
+  .backBtn {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Public Sans", sans-serif;
+    color: #aa0c0c;
+    text-transform: uppercase;
+    border: none;
+    padding: 40px 0 5px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: transparent;
+  }
+
+  /* Pilen til venstre for teksten */
+  .backBtn::before {
+    content: "←";
+    margin-right: 8px;
+    font-size: 18px;
+  }
+}
