@@ -23,6 +23,6 @@ const backButtons = document.querySelectorAll(".backBtn");
 backButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     // Sender altid til projektsiden
-    window.location.href = "projekter.html"; //Går tilbage til URL for projekter
+    window.location.href = "./projekter.html"; //Går tilbage til URL for projekter
   });
 });
